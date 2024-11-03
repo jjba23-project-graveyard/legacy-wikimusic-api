@@ -11,6 +11,8 @@ dev: fmt
 # 	nix run -L .#
 run-production:
 	nix run -L . -- "./resources/config/run-production.toml"
+server:
+	stack --nix run -- "./resources/config/run-production.toml"
 test: fmt
 	nix run -L .#test
 push-cache:

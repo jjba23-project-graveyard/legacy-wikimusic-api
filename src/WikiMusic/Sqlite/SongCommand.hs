@@ -272,6 +272,7 @@ updateSongContents' env songContentDeltas = do
       . select
       . filter_ (\s -> (s ^. #identifier) `in_` map (val_ . (\z -> UUID.toText $ z ^. #identifier)) songContentDeltas)
       $ all_ ((^. #songContents) wikiMusicDatabase)
+
   _ <- liftIO . putStrLn . Relude.show $ songContentDeltas
   now <- liftIO getCurrentTime
   let updatedP =
