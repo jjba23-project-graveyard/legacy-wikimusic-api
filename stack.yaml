@@ -4,21 +4,21 @@ packages:
 - .
 
 extra-deps:
-  - git: https://github.com/jjba23/wikimusic-model-hs.git
-    commit: cec8e5e9d9c92c994c293cd865b01daabaab7f0a
-  - git: https://github.com/jjba23/keuringsdienst.git
-    commit: 77029fdec26c797aed0e4cc85281699924a042c6
+  - git: https://codeberg.org/jjba23/wikimusic-model-hs.git
+    commit: 722c3d1f8acec136fc14340c7f855aeb0143a530
+  - git: https://codeberg.org/jjba23/keuringsdienst.git
+    commit: 1a8420fc428f8f0c4d7170c337d19799cc558cb7
   - tomland-1.3.3.3@sha256:877635f30fc7eeebc7b79283baeec1b7904365973cc3fd98c86f9d147eeef575,9147
   - validation-selective-0.2.0.0@sha256:cc847f1a110e3b1bd437a5356f115881b61cafcb11781b570b180efd88bf0907,3917
   - beam-sqlite-0.5.3.0@sha256:2894d2d2480f1aae2af577a42a28576f5a8e145f9eb8b1298fba42635c4fc59e,3789
   - beam-migrate-0.5.2.1@sha256:8418cc3dfbb8ebd63fc7d490167206bce2c1784e4617be4fa9d60ddbe3b7081d,4978
   - smtp-mail-0.5.0.0@sha256:3056eab06ddeaa47b4f5748107d16b43883421899f90fc7dfef561ea23149d33,1390
-  - git: https://github.com/jjba23/yggdrasil-schema.git
-    commit: 939174ca7172f81f29edb1088df5bbd53ea645aa
-  - git: https://github.com/jjba23/wikimusic-api-spec.git
-    commit: 18d217579b901411fa51921463353864c448f48b
-  - git: https://github.com/jjba23/free-alacarte.git
-    commit: 1d97a5b112ba0184cbb08d6bc37f49f5acdfdb48
+  - git: https://codeberg.org/jjba23/yggdrasil-schema.git
+    commit: 79ee1219d82f7573e2f3d59153e1f2102f7a53c1
+  - git: https://codeberg.org/jjba23/wikimusic-api-spec.git
+    commit: d9ed3801c42330f8b5f96fea6b6196a01790261d
+  - git: https://codeberg.org/jjba23/free-alacarte.git
+    commit: 4ec2a453c90b0fc86dce46008effc3ea20466375
     
 
 nix:
