@@ -12,6 +12,6 @@ server:
 test: fmt
 	LANG=C.UTF-8 stack --nix test
 build: fmt
-	LANG=C.UTF-8 stack --nix test
+	LANG=C.UTF-8 stack --nix build
 release:
 	LANG=C.UTF-8 stack --nix sdist .
