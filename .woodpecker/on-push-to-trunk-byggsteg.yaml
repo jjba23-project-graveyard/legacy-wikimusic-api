@@ -5,6 +5,6 @@ when:
 steps:
   - name: "trigger re-deploy WikiMusic API"
     image: debian
+    secrets: [BYGGSTEG_KEY]
     commands:
-      - curl https://byggsteg.jointhefreeworld.org/api/jobs/submit -X POST -H 'Content-Type: application/x-www-form-urlencoded' -H 'Authorization: Basic byggsteg-key' --data-urlencode 'job-code=\`((project . "wikimusic-api")(branch-name . "trunk")(task . "pull-and-restart")(clone-url . "https://codeberg.org/jjba23/wikimusic-api"))'
-
+      - curl https://byggsteg.jointhefreeworld.org/api/jobs/submit -X POST -H 'Content-Type: application/x-www-form-urlencoded' -H 'Authorization: Basic $BYGGSTEG_KEY' --data-urlencode 'job-code=\`((project . "wikimusic-api")(branch-name . "trunk")(task . "pull-and-restart")(clone-url . "https://codeberg.org/jjba23/wikimusic-api"))'
